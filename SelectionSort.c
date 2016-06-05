@@ -11,11 +11,12 @@ void SelectionSort(int *a,int n)
 		{
 			if(a[j]<a[iMin])
 			{
-				temp=a[iMin];
-				a[iMin]=a[j];
-				a[j]=temp;
+				iMin=j;
 			}
 		}
+		        temp=a[iMin];
+				a[iMin]=a[i];
+				a[i]=temp;
 	}
 }
 int main()
